@@ -2,15 +2,15 @@ html{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     background-repeat: no-repeat;
-    height: 100%;
+    height: 140%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #root{
+    top: 0;
     max-width: 1280px;
     margin: 0 auto;
     padding:2rem;
     text-align: center;
-   
     height: 100%;
 }
 .status{
@@ -55,6 +55,7 @@ color: rgb(76, 54, 6);
     
 }
 .board_title{
+    margin-top: -0.1rem;
     font-size: 3rem;
     color:rgb(90, 62, 1)  ;
 }
@@ -66,4 +67,47 @@ color: rgb(76, 54, 6);
 .board-row{
     display: flex;
     justify-content: center;
+}
+.status-even{
+    border: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    background-color: transparent;
+    color:rgb(101, 1, 45) ;
+}
+.status-odd{
+    border: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    background-color: transparent;
+    color:rgb(178, 9, 82) ;
+}
+.status_btn:nth-child(even){
+    color:rgb(78, 53, 64) ;
+}
+.game-input > ol {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.status-li{
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+color:rgb(101, 1, 45) ;
 }
